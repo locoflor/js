@@ -165,7 +165,7 @@ $('#quiz').append(outcome);
 
 //Configure ImagePickers
 jQuery("select.image-picker").imagepicker({
-                                          show_label:  true,
+                                          show_label:  false,
                                           clicked: clickedEvent
                                           });
 //Event handling
