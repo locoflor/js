@@ -164,10 +164,13 @@ outcome.hide();
 $('#quiz').append(outcome);
 
 //Configure ImagePickers
+$(function() {
 jQuery("select.image-picker").imagepicker({
                                           show_label:  false,
                                           clicked: clickedEvent
                                           });
+});
+
 //Event handling
 function clickedEvent(e) {
     var pickers = $(".image-picker");
