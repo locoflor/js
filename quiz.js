@@ -133,6 +133,7 @@ quizSource += '}';
 
 
 //DO NOT CHANGE BELOW THIS LINE
+$( document ).ready(function() {
 
 //Get quiz data, change to callout
 var quiz = $.parseJSON(quizSource);
@@ -168,6 +169,8 @@ jQuery("select.image-picker").imagepicker({
                                           show_label:  false,
                                           clicked: clickedEvent
                                           });
+});
+
 //Event handling
 function clickedEvent(e) {
     var pickers = $(".image-picker");
