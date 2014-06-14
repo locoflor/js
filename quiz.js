@@ -142,7 +142,8 @@ var quiz = null;
   //Get quiz data, change to callout
   quiz = $.parseJSON(getQuiz());
 
-  //Parse quiz and build UI
+$('#quiz').hide();
+    //Parse quiz and build UI
   $('#quiz').append('<div class="quiz_title">' + quiz.title + '</div>');
   for(i in quiz.questions) {
         selections[i] = 0;
@@ -167,13 +168,17 @@ var quiz = null;
   outcome.hide();
   $('#quiz').append(outcome);
 
-$(function() {
+function configureImagePickers() {
   //Configure ImagePickers
   jQuery("select.image-picker").imagepicker({
                                           show_label:  true,
                                           clicked: clickedEvent
                                           });
-});
+    $('#quiz').show();
+}
+window.setTimeout(configureImagePickers, 100);
+
+
   //Event handling
 function clickedEvent(e) {
     var pickers = $(".image-picker");
