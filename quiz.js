@@ -1,3 +1,9 @@
+
+var quiz;
+
+//DO NOT CHANGE BELOW THIS LINE
+$(function() {
+
 //Quiz definition
 quizSource = '{"title" : "';
 
@@ -127,13 +133,6 @@ quizSource += '        "text" : "Lilac",';
 quizSource += '        "image" : "http://www.brooksmountainsoap.com/wp-content/uploads/2013/11/lilac_flowers-10343.jpg"';
 quizSource += '    }]';
 quizSource += '}';
-
-
-
-var quiz;
-
-//DO NOT CHANGE BELOW THIS LINE
-$(function() {
 
 //Get quiz data, change to callout
 quiz = $.parseJSON(quizSource);
