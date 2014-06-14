@@ -1,9 +1,3 @@
-
-var quiz;
-
-//DO NOT CHANGE BELOW THIS LINE
-$(function() {
-
 //Quiz definition
 quizSource = '{"title" : "';
 
@@ -134,8 +128,14 @@ quizSource += '        "image" : "http://www.brooksmountainsoap.com/wp-content/u
 quizSource += '    }]';
 quizSource += '}';
 
+
+
+
+
+//DO NOT CHANGE BELOW THIS LINE
+
 //Get quiz data, change to callout
-quiz = $.parseJSON(quizSource);
+var quiz = $.parseJSON(quizSource);
 
 //Parse quiz and build UI
 $('#quiz').append('<div class="quiz_title">' + quiz.title + '</div>');
@@ -168,8 +168,6 @@ jQuery("select.image-picker").imagepicker({
                                           show_label:  false,
                                           clicked: clickedEvent
                                           });
-});
-
 //Event handling
 function clickedEvent(e) {
     var pickers = $(".image-picker");
@@ -254,4 +252,3 @@ function processSelections() {
     $('#outcome_caption').text("You are a " + quiz.outcomes[selectedOutcome].text);
     $('#outcome').show();
 }
-
