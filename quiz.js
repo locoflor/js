@@ -139,8 +139,6 @@ function getQuiz() {
 var selections = new Array();
 var quiz = null;
 
-$(function() {
-  debugger;
   //Get quiz data, change to callout
   quiz = $.parseJSON(getQuiz());
 
@@ -161,11 +159,7 @@ $(function() {
         
         }
         $('#quiz').append(select);
-    select.imagepicker({
-                                            show_label:  true,
-                                            clicked: clickedEvent
-                                            });
-       $('#quiz').append("<p>");
+        $('#quiz').append("<p>");
   }
   var outcome = $('<div id="outcome">');
   outcome.append($('<img id="outcome_image">'));
@@ -173,11 +167,12 @@ $(function() {
   outcome.hide();
   $('#quiz').append(outcome);
 
+$(function() {
   //Configure ImagePickers
-//  jQuery("select.image-picker").imagepicker({
-//                                          show_label:  true,
-//                                          clicked: clickedEvent
-//                                          });
+  jQuery("select.image-picker").imagepicker({
+                                          show_label:  true,
+                                          clicked: clickedEvent
+                                          });
 });
   //Event handling
 function clickedEvent(e) {
