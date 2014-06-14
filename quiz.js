@@ -130,13 +130,13 @@ quizSource += '}';
 
 
 
-
+var quiz;
 
 //DO NOT CHANGE BELOW THIS LINE
-$( document ).ready(function() {
+$(function() {
 
 //Get quiz data, change to callout
-var quiz = $.parseJSON(quizSource);
+quiz = $.parseJSON(quizSource);
 
 //Parse quiz and build UI
 $('#quiz').append('<div class="quiz_title">' + quiz.title + '</div>');
