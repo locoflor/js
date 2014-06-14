@@ -161,7 +161,11 @@ $(function() {
         
         }
         $('#quiz').append(select);
-        $('#quiz').append("<p>");
+    select.imagepicker({
+                                            show_label:  true,
+                                            clicked: clickedEvent
+                                            });
+       $('#quiz').append("<p>");
   }
   var outcome = $('<div id="outcome">');
   outcome.append($('<img id="outcome_image">'));
@@ -170,10 +174,10 @@ $(function() {
   $('#quiz').append(outcome);
 
   //Configure ImagePickers
-  jQuery("select.image-picker").imagepicker({
-                                          show_label:  true,
-                                          clicked: clickedEvent
-                                          });
+//  jQuery("select.image-picker").imagepicker({
+//                                          show_label:  true,
+//                                          clicked: clickedEvent
+//                                          });
 });
   //Event handling
 function clickedEvent(e) {
