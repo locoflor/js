@@ -176,7 +176,7 @@ function configureImagePickers() {
                                           });
     $('#quiz').show();
 }
-window.setTimeout(configureImagePickers, 100);
+window.setTimeout(configureImagePickers, 500);
 
 
   //Event handling
