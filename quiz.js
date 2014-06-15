@@ -171,7 +171,7 @@ $('#quiz').hide();
 function configureImagePickers() {
     alert(jQuery.length);
     var jq = jQuery;
-    if(jQuery.length > 0)
+    if(jQuery.length > 1)
         jq = jQuery[1];
   //Configure ImagePickers
   jq(".image-picker").imagepicker({
