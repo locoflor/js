@@ -176,8 +176,9 @@ function configureImagePickers() {
                                           });
     $('#quiz').show();
 }
+$(function() {
 window.setTimeout(function() { configureImagePickers(); }, 500);
-
+});
 
   //Event handling
 function clickedEvent(e) {
