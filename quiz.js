@@ -169,8 +169,9 @@ $('#quiz').hide();
   $('#quiz').append(outcome);
 
 function configureImagePickers() {
+    alert(jQuery.length);
   //Configure ImagePickers
-  Sizzle(".image-picker").imagepicker({
+  jQuery(".image-picker").imagepicker({
                                           show_label:  true,
                                           clicked: clickedEvent
                                           });
