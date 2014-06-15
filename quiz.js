@@ -169,13 +169,9 @@ $('#quiz').hide();
   $('#quiz').append(outcome);
 
 function configureImagePickers() {
-    alert(jQuery.length);
-    var jq = jQuery;
-    if(jQuery.length > 1)
-        jq = jQuery[1];
   //Configure ImagePickers
-  jq(".image-picker").imagepicker({
-                                          show_label:  true,
+  jQuery(".image-picker").imagepicker({
+                                          show_label:  false,
                                           clicked: clickedEvent
                                           });
     $('#quiz').show();
