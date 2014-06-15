@@ -169,6 +169,7 @@ $('#quiz').hide();
   $('#quiz').append(outcome);
 
 function configureImagePickers() {
+    alert("image-picker");
   //Configure ImagePickers
   jQuery(".image-picker").imagepicker({
                                           show_label:  true,
@@ -177,7 +178,7 @@ function configureImagePickers() {
     $('#quiz').show();
 }
 $(function() {
-window.setTimeout(function() { configureImagePickers(); }, 5000);
+window.setTimeout(function() { configureImagePickers(); }, 0);
 });
 
   //Event handling
