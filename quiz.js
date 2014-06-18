@@ -170,15 +170,17 @@ $('#quiz').hide();
 
 function configureImagePickers() {
   //Configure ImagePickers
-  jQuery(".image-picker").imagepicker({
+  alert(jQuery("select.image-picker").length);
+  
+  jQuery("select.image-picker").imagepicker({
                                           show_label:  false,
                                           clicked: clickedEvent
                                           });
     $('#quiz').show();
 }
 $(function() {
-//window.setTimeout(function() { configureImagePickers(); }, 0);
-configureImagePickers();
+window.setTimeout(function() { configureImagePickers(); }, 0);
+//configureImagePickers();
 });
 
   //Event handling
