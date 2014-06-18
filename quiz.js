@@ -170,9 +170,9 @@ $('#quiz').hide();
 
 function configureImagePickers() {
   //Configure ImagePickers
-  alert(jQuery("select.image-picker").length);
+  //alert(jQuery("select.image-picker").length);
   
-  jQuery("select.image-picker").imagepicker({
+  $("select.image-picker").imagepicker({
                                           show_label:  false,
                                           clicked: clickedEvent
                                           });
