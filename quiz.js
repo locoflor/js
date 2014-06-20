@@ -118,7 +118,7 @@ function getQuiz() {
     quizSource += '        "image" : "http://imavex.vo.llnwd.net/o18/clients/urbanfarm/images/Annual_Flowers/Sunflower.jpg"';
     quizSource += '    },{';
     quizSource += '        "text" : "Rose",';
-    quizSource += '        "image" : "http://www.wallpick.com/wp-content/uploads/2014/03/01/a_red_rose_for_you-640x480.jpg"';
+    quizSource += '        "image" : "http://images.all-free-download.com/images/graphicmedium/red_rose_flower_238226.jpg"';
     quizSource += '    },{';
     quizSource += '        "text" : "Tulip",';
     quizSource += '        "image" : "http://bestclipartblog.com/clipart-pics/tulip-clip-art-1.jpg"';
