@@ -140,7 +140,10 @@ var selections = new Array();
 var quiz = null;
 
   //Get quiz data, change to callout
-  quiz = $.parseJSON(getQuiz());
+if (typeof ($sf) === "undefined")
+    quiz = $.parseJSON(getQuiz());
+else
+    quiz = $sf.getjQuery().parseJSON(getQuiz());
 
 $('#quiz').hide();
     //Parse quiz and build UI
@@ -170,8 +173,6 @@ $('#quiz').hide();
 
 function configureImagePickers() {
   //Configure ImagePickers
-  //alert(jQuery("select.image-picker").length);
-  
   $("select.image-picker").imagepicker({
                                           show_label:  false,
                                           clicked: clickedEvent
