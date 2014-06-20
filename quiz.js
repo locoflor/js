@@ -173,10 +173,17 @@ $('#quiz').hide();
 
 function configureImagePickers() {
   //Configure ImagePickers
+  if (typeof ($sf) === "undefined")
   $("select.image-picker").imagepicker({
                                           show_label:  false,
                                           clicked: clickedEvent
                                           });
+else
+  $sf.getjQuery()("select.image-picker").imagepicker({
+                                          show_label:  false,
+                                          clicked: clickedEvent
+                                          });
+
     $('#quiz').show();
 }
 $(function() {
